@@ -1,0 +1,121 @@
+.game-card{
+    border-radius: 10px;
+}
+
+.game-img{
+    position: relative;
+}
+
+.game-img img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 250px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.game-new-price{
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.game-old-price{
+    color: #F8593B;
+    font-size: 1.23rem;
+    text-decoration: line-through;
+    font-weight: 600;
+}
+
+.add-basket{
+    background-color: #2ECC71;
+    color:#fff;
+    border-radius: 4px;
+    padding: 9px 18px;
+    text-transform: uppercase;
+    transition: all ease-in .3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-basket:hover{
+    opacity: .8;
+}
+
+.fav-icon-empty{
+    background:url('../img/fav.svg');
+    display: block;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+}
+
+.fav-icon-filled{
+    background:url('../img/fav-active.svg');
+    display: block;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    display: none;
+}
+
+.add-fav.js-active .fav-icon-empty{
+    display: none;
+}
+
+.add-fav.js-active .fav-icon-filled{
+    display: block;
+}
+
+.fav-icon{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+@media (max-width:1024px){
+    .game-price-area {flex-direction: column;}
+    .price-wrap{display: flex;
+    align-items: center;
+    justify-content: space-evenly;}
+    .add-basket{margin-top: 15px;}
+}
+
+.header{
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 1px solid #000;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.favourite-icon-area{
+   margin-right: 15px;
+  position: relative;
+}
+
+.basket-icon-area{
+   position: relative;
+ }
+
+ .count{
+    position: absolute;
+    top: 0;
+    right: -5px;
+    background-color: #2ECC71;
+    padding: 5px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    z-index: 2;
+ }
+
+ .basket-icon, .favourite-icon{
+    margin-top: 16px;
+    display: inline-block;
+    cursor: pointer;
+ }

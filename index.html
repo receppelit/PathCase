@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js"></script>
+  <script src="scripts/general.js" defer></script>
+</head>
+<body class="bg-slate-100">
+  <div class="container mx-auto px-4 mt-4">
+    <div class="header">
+      <div class="favourite-icon-area">
+        <span class="count">0</span>
+        <span class="favourite-icon">
+          <svg fill="#000" width="22" height="22" viewBox="0 0 36 31">
+            <path d="M26.3 2C30.5 2 34 5.4 34 9.7c0 2.2-1 4.3-2.6 5.8h-.1L18 28.7 4.7 15.5h-.1C3 14 2 11.9 2 9.7 2 5.4 5.5 2 9.7 2c2.7 0 5.2 1.4 6.6 3.7L18 8.4l1.7-2.8C21.1 3.4 23.6 2 26.3 2m0-2c-3.5 0-6.6 1.9-8.3 4.6C16.3 1.9 13.2 0 9.7 0 4.4 0 0 4.3 0 9.7c0 2.9 1.3 5.5 3.3 7.3l13.8 13.7c.2.2.6.4.9.4.3 0 .7-.1.9-.4L32.7 17c2-1.8 3.3-4.4 3.3-7.3C36 4.3 31.6 0 26.3 0z"></path>
+        </svg>
+        </span>
+      </div>
+      <div class="basket-icon-area">
+        <span class="count">0</span>
+        <span class="basket-icon">
+          <svg fill="#000" width="22" height="22" viewBox="0 0 38 35">
+            <path d="M19 2c2.2 0 3.8.6 4.9 1.9 1.6 1.7 2 4.4 2.1 6.1H12c.1-1.7.5-4.4 2.1-6.1C15.2 2.6 16.8 2 19 2m0-2c-10.2 0-9 12-9 12h18s1.2-12-9-12z"></path>
+            <path d="M33.2 12l2.5 21H2.3l2.5-21h28.4m1.8-2H3L0 35h38l-3-25z"></path>
+        </svg>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="container mx-auto px-4">
+    <div id="game-list" class="grid gap-4 grid-cols-2 grid-rows-3 my-4 md:grid-cols-4" data-js="game-list">
+    </div>
+  </div>
+  
+  
+</body>
+</html>
